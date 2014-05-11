@@ -39,3 +39,4 @@ Android Application for Nature Sweet
 - Calendarización de actividades
 - Modo Offline (sincronización de datos)
 - Administración de asociados paara encargados
+- Manejo de de imágenes
