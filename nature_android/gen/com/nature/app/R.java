@@ -21,12 +21,27 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int splash_screen=0x7f020001;
+        public static final int button_place=0x7f020000;
+        public static final int button_qr=0x7f020001;
+        public static final int button_user=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int img_focus_place=0x7f020004;
+        public static final int img_focus_qr=0x7f020005;
+        public static final int img_focus_user=0x7f020006;
+        public static final int img_normal_place=0x7f020007;
+        public static final int img_normal_qr=0x7f020008;
+        public static final int img_normal_user=0x7f020009;
+        public static final int img_push_place=0x7f02000a;
+        public static final int img_push_qr=0x7f02000b;
+        public static final int img_push_user=0x7f02000c;
+        public static final int splash_screen=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f080001;
-        public static final int progressBar1=0x7f080000;
+        public static final int action_settings=0x7f080004;
+        public static final int button1=0x7f080000;
+        public static final int button2=0x7f080001;
+        public static final int button3=0x7f080002;
+        public static final int progressBar1=0x7f080003;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector 
+   xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/img_push_qr"
+          android:state_pressed="true" />
+    <item android:drawable="@drawable/img_focus_qr"
+          android:state_focused="true" />
+    <item android:drawable="@drawable/img_normal_qr" />
+</selector>

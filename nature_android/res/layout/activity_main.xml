@@ -1,16 +1,27 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
-
-    <TextView
+<LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical" >
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="225dp"
+            android:layout_height="125dp"
+            android:background="@drawable/button_place" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="225dp"
+            android:layout_height="125dp"
+            android:background="@drawable/button_user" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="225dp"
+            android:layout_height="125dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_qr" />
+
+    </LinearLayout>
+
