@@ -21,18 +21,20 @@ describe Api::V1::ShipsController do
   end
 
   describe 'PUT #update' do
-    let(:params) do
-      {
+    context 'on valid data' do
+      let(:params) do
+        {
 
-        id: ship.id,
-        ship: {
-          code: 'NAV500'
+          id: ship.id,
+          ship: {
+            code: 'NAV500'
+          }
         }
-      }
-    end
+      end
 
-    it 'updates the given ship' do
-      expect { put :edit, params }.to change{ ship.reload.code }
+      it 'updates the given ship' do
+        expect { put :edit, params }.to change{ ship.reload.code }
+      end
     end
   end
 end
