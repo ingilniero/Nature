@@ -19,4 +19,20 @@ describe Api::V1::ShipsController do
       expect(response.body).to eq ship.to_json
     end
   end
+
+  describe 'PUT #update' do
+    let(:params) do
+      {
+
+        id: ship.id,
+        ship: {
+          code: 'NAV500'
+        }
+      }
+    end
+
+    it 'updates the given ship' do
+      expect { put :edit, params }.to change{ ship.reload.code }
+    end
+  end
 end
