@@ -10,13 +10,17 @@ class Api::V1::ShipsController < ApplicationController
   end
 
   def edit
-    render json: @ship.update_attributes(ship_params), status: :ok
+    if @ship.update_attributes(ship_params)
+      render json: @ship, status: :ok
+    else
+      render json: @ship.errors.messages, status: :unprocessable_entity
+    end
   end
 
   private
 
   def ship_params
-    params.require(:ship).permit(:code, :number)
+    params.require(:ship).permit(:number)
   end
 
   def find_ship

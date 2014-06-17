@@ -27,13 +27,34 @@ describe Api::V1::ShipsController do
 
           id: ship.id,
           ship: {
-            code: 'NAV500'
+            number: 2
           }
         }
       end
 
       it 'updates the given ship' do
-        expect { put :edit, params }.to change{ ship.reload.code }
+        expect { put :edit, params }.to change { ship.reload.number }
+      end
+    end
+
+    context 'on invalid data' do
+      let(:params) do
+        {
+          id: ship.id,
+          ship: {
+            number: nil
+          }
+        }
+      end
+
+      before { put :edit, params }
+
+      it 'does not update the given resource' do
+        expect(ship.reload.number).to eq ship.number
+      end
+
+      it 'returns an unprocessable entity status code' do
+        expect(response.status).to eq 422
       end
     end
   end
